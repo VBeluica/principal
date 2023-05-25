@@ -1,14 +1,14 @@
 import React from 'react';
-import Page from './pages/inicial';
 
+import Tabela from './components/identificacao';
+import Cargo from './components/cargo';
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <h1>Página Inicial</h1>
-      <p>Bem-vindo ao meu projeto React!</p>
+    <div className="box">
+      <Tabela />
     </div>
   );
 }
 
-export default Page;
+export default Cargo;

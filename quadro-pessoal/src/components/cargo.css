@@ -1,0 +1,29 @@
+.cargo{
+    position: absolute;
+    border: 1px solid #130e00;
+    border-radius: 23px;
+    width: 972px;
+    height: 75px;
+    top: 100px;
+    left: 287px;
+    line-height: 1.5;
+  }
+  
+.primeira-linhaluna{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    color: #0138A5;
+  
+  }
+  
+  .coluna{
+    font-family: 'Inter';
+    color: #000000A8;
+    text-align: center;
+    vertical-align: top
+    
+  }
+  
