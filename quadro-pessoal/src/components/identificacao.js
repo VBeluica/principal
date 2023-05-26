@@ -1,8 +1,13 @@
 import React from 'react';
 import './identificacao.css';
+import { Grid } from '@mui/material';
+import Table from '@mui/material/Table';
+
 
 const Tabela = () => {
   return (
+    
+    <Table sx={{ minWidth: 650 }} aria-label="caption table">
     <table className="tabela">
       <tbody>
         <tr>
@@ -21,6 +26,7 @@ const Tabela = () => {
         </tr>
       </tbody>
     </table>
+   </Table>
   );
 }
 

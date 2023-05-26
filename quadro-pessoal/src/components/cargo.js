@@ -6,9 +6,9 @@ const Cargo = () => {
     <table className="tabela">
       <tbody>
         <tr>
-          <td className="-primeira-linhaluna">Grupo/Cargo</td>
-          <td className="-primeira-linhaluna">Niv-clas-Pad</td>
-          <td className="-primeira-linhaluna">Código da vaga</td>
+          <td className="linha">Grupo/Cargo</td>
+          <td className="linha">Niv-clas-Pad</td>
+          <td className="linha">Código da vaga</td>
 
         </tr>
         <tr>

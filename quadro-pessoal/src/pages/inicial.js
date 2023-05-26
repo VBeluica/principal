@@ -7,6 +7,8 @@ import groups from '../assets/image/image10.png';
 import icone from '../assets/icons/icons8-lupa-50.png';
 import'../../src/styles/Inicial.css';
 
+
+
 function Page() {
     return (
       
@@ -18,7 +20,7 @@ function Page() {
           <p> Bem-vindo(a) ao </p>
           <h1>Pesquisa no Quadro de Pessoal </h1>
           <img src={group} className="forma"/>
-          <button className="submit" > <img src = {icone} className='icon'/>
+          <button className="submit"  > <img src = {icone} className='icon'/>          
           <h4>Buscar </h4>
          
           </button>
