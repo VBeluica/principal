@@ -1,9 +1,10 @@
 .tabela{
-  position: absolute;
+  
   border: 1px solid #130e00;
   border-radius: 23px;
   width: 972px;
   height: 80px;
+  position: flex;
   
  
 }

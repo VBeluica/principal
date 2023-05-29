@@ -1,9 +1,12 @@
 import React from "react";
 import Box from '@mui/material/Box';
+import Tabela from "../components/identificacao";
+import Cargo from "../components/cargo";
 
 const Pesquisa= () => {
     return (
-        <Box
+      <div>
+           <Box
         sx={{
          
             position: 'absolute',
@@ -13,8 +16,13 @@ const Pesquisa= () => {
             textAlign: 'center',
             left: '18%',
             top: '10%',
+            justifyContent: 'space-between'
         }}
       />
+
+      <Tabela/>
+      <Cargo/>
+         </div>
     );
   }
   

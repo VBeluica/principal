@@ -4,7 +4,7 @@
     border-radius: 23px;
     width: 972px;
     height: 75px;
-    top: 100px;
+    position: flex;
     left: 287px;
     line-height: 1.5;
     display: flex;

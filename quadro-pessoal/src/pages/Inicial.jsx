@@ -6,12 +6,18 @@ import group from '../assets/image/image13.png';
 import groups from '../assets/image/image10.png';
 import icone from '../assets/icons/icons8-lupa-50.png';
 import'../../src/styles/Inicial.css';
+import { useNavigate } from 'react-router-dom';
 
+const Inicial = () => {
+  const navigate = useNavigate();
 
+  const onClickButton = () => {
+    navigate('/pesquisa');
+  };
 
-function Page() {
-    return (
-      
+  return (
+      <main>
+    
       <div className="App">
         <header className="App-header">
           <img src={imagem} className="App-logo"  />
@@ -20,15 +26,18 @@ function Page() {
           <p> Bem-vindo(a) ao </p>
           <h1>Pesquisa no Quadro de Pessoal </h1>
           <img src={group} className="forma"/>
-          <button className="submit"  > <img src = {icone} className='icon'/>          
-          <h4>Buscar </h4>
+          <button className="submit" onClick={onClickButton} >
+             <img src = {icone} className='icon'/>
+             <h4>Buscar </h4>
          
           </button>
          
         </header>
       </div>
-    );
-  }
+      </main>
+    )
+}
   
-  export default Page;
-  
+ 
+
+export default  Inicial;

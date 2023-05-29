@@ -1,18 +1,21 @@
 import React from 'react';
-import { Routes, Route, } from 'react-router-dom';
+
+
 import Pesquisa from './pages/pesquisa';
 import Page from './pages/Inicial';
-import Tabela from './components/identificacao';
-import Cargo from './components/cargo';
-import AcccessibleTable from './components/identificacao';
+import Inicial from './pages/Inicial';
+import { Outlet, Link, Route, Routes } from 'react-router-dom';
 
 
-const App = () => {
+export default function App() {
   return (
-  <Routes>
-    <Route path="/pesquisa" element={<Pesquisa/>} />
-  </Routes>
+    <Routes>
+   
+      <Route path='pesquisa' element={<Pesquisa />} />
+      <Route path="/" element={<Page />} />
+      <Route path="/" render={(props) => <Inicial {...props} />} />
+      </Routes>
+
   );
 }
 
-export default Page ;
