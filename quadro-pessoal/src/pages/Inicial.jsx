@@ -1,10 +1,9 @@
 import React from 'react';
 
 import imagem from '../assets/image/image11.png';
-import image from '../assets/image/image 14.png';
-import group from '../assets/image/image13.png';
-import groups from '../assets/image/image10.png';
-import icone from '../assets/icons/icons8-lupa-50.png';
+import image from '../assets/image/image14.png';
+import fundo from '../assets/image/image16.png';
+
 import'../../src/styles/Inicial.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -16,28 +15,37 @@ const Inicial = () => {
   };
 
   return (
-      <main>
-    
-      <div className="App">
-        <header className="App-header">
-          <img src={imagem} className="App-logo"  />
-          <img src={image} className='Inss'/>
-          <img src={groups} className="formas"/>
-          <p> Bem-vindo(a) ao </p>
-          <h1>Pesquisa no Quadro de Pessoal </h1>
-          <img src={group} className="forma"/>
-          <button className="submit" onClick={onClickButton} >
-             <img src = {icone} className='icon'/>
-             <h4>Buscar </h4>
-         
-          </button>
-         
-        </header>
+    <div className='body'>
+      <nav>
+        <img src={image} className='img-logo'/>
+        {/* <div className='logo'>Logo</div>
+        <div className='logo'>.</div> */}
+      </nav>
+
+      <div className='wrapper'>
+        <div className='cols cols0'>
+          <span className='topline'>Bem-vind(o) ao</span>
+          <h1>Pesquisa no Quadro de Pessoas</h1>
+          <button onClick={onClickButton}>Buscar</button>
+        </div>
+        
+        <div className='cols cols1'>
+          <div className='imgbox'>
+            <img src={imagem} className='img-busca'/> 
+
+          </div>
+          <img src={fundo} className='img-fundo'></img>
+        </div>
+
       </div>
-      </main>
-    )
+
+    </div>
+  );
 }
+
   
+  
+  export default  Inicial;
  
 
-export default  Inicial;
+

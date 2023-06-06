@@ -1,118 +1,178 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  
-    position: absolute;
-    width: 434px;
-    height: 395px;
-    left: 892px;
-    top: 196px;
-  
-    
-    mix-blend-mode: multiply;
-    }
-  
-  .Inss{
-    position: absolute;
-    width: 251px;
-    height: 76px;
-    left: 127px;
-    top: 92px;
-  
-   
-    }
-  
-    p{
-      position: absolute;
-      width: 608px;
-      height: 67px;
-      left: 110px;
-      top: 266px;
-  
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 40px;
-      line-height: 49px;
-  
-      color: #005CB9;
-    }
-  
-    h1{
-      position: absolute;
-      width: 608px;
-      height: 67px;
-      left: 110px;
-      top: 326px;
-      size: 74px;
-  
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 800;
-      font-size: 64px;
-      line-height: 78px;
-  
-      color: #005CB9;
-    }
-  
-    .forma{
-      position: absolute;
-      width: 819.51px;
-      left: 835px;
-      top: 0%;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
 
-      
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
-  
-.formas{
-  position: absolute;
-  width: 819px;
-  height: 709px;
-  left: 59.8%;
-  top: 28%;  
-  
-    }
+:root{
+  --blue: #005CB9;
+  --white: #fff;
+  --dark: #1e1c2a;
+} 
 
- 
-.submit{
-  position: absolute;
-  width: 153px;
-  height: 47px;
-  left: 107px;
-  top: 550px;
-  border: white;
-  background-color: white;
-  border-radius: 30px;
-  box-shadow: 2px 1px 10px gray;
+.body{
+  overflow: hidden;
+}
+.container{
+  width: 100%;
+  min-height: 100vh;
+}
+nav{
+  /* display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 80px;
+  line-height: 80px;
+  z-index: 111; */
+
+
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  width: 100%;
+  height: 50px;
+  transition: all 0.5s;
+  position: fixed;
+  z-index: 111; 
+
+
+
+}
+.img-logo{
+  height: 50px;
+}
+.logo{
+  display: flex;
+  font-weight: 800;
+  color: var(--blue);
+  letter-spacing: 3px;
   cursor: pointer;
 }
-      
-  .icon{
-  position: absolute;
-   width: 18%;
-   left: 20px;
-   top: 10px;
-  }
-  
-  h4{
-  position: absolute;
-  font-family: 'Montserrat';
-  color: #005CB9;
-  font-size: 20px;
-  font-weight: bold;
-  top: -13px;
-  right: 30px;
-  }
+.wrapper{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 10%;
+  overflow: hidden;
+}
 
-  @media (max-width: 768px) {
-    /* Estilos para dispositivos com largura de tela de até 768px */
+.img-fundo{
+  position:absolute;
+  content: '';
+  width: 100%;
+  height: 100vh;
+  left:0px;
+  top: 0px;
+}
+
+
+
+.img-busca{
+  width: 70%;
+  z-index: 111;
+}
+
+
+.cols0{
+  width: 50%;
+  z-index: 5; 
+  /* circula para baixo do texto */
+}
+.cols1{
+  margin: 40px;
+  /* circula para baixo do texto */
+}
+.topline{
+  display: block;
+  position: relative;
+  font-size: 30px;
+  color: var(--blue);
+}
+h1{
+  display: block;
+  font-size: 2.5em;
+  font-weight: 800;
+  color: var(--blue);
+}
+button{
+  margin: 20px 5px;
+  padding: 2px 2px;
+  border: none;
+  padding: 15px 45px;
+  background: var(--white);
+  color: var(--blue);
+  border-radius: 24px;
+  font-weight: 700;
+  transition: all 0.5s;
+  box-shadow: 0 0.1rem 0.5rem #ccc;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+button:hover{
+  background-color: #E4EDFF
+}
+
+
+.imgbox{
+  position: relative;
+  width: 100%;
+}
+.imgbox img{
+  position: relative;
+  /* animation: animateUser 4s linear infinite; */
+}
+/* @keyframes animateUser {
+  50%{
+    right: 30px;
+    top: -90px;
+  }
+} */
+
+
+@media (max-width:785px) {
+
+  .wrapper{
+      padding: 120px 2%;
+      flex-direction: column;
+      text-align: center;
+      overflow: hidden;
+      gap: 2rem;
+      overflow-y: scroll;
+  }
+  .topline{
+      font-size: 20px;
+  }
+  h1{
+      font-size: 2.3rem;
+      line-height: 2.5rem;
+  }
+  .img-busca{
+      width: 40%;
+  }
+  .cols0{
+    margin: 5px;
+  }
+  .img-topo{
+    position:absolute;
+    content: '';
+    /* height: 150px;
+    width: 150px; */
+    left:35%;
+    top: 0px;
   }
   
-  @media (min-width: 769px) and (max-width: 1024px) {
-    /* Estilos para dispositivos com largura de tela entre 769px e 1024px */
+  .img-final{
+    position:absolute;
+    content: '';
+    /* height: 150px;
+    width: 150px; */
+    right: 0px;
+    top: 41.5%;
   }
-  
-  @media (min-width: 1025px) {
-    /* Estilos para dispositivos com largura de tela acima de 1025px */
-  }
-  
+                             
+}
