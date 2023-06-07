@@ -1,5 +1,5 @@
 import React from 'react';
-import './cargo.css';
+import '../../src/styles/cargo.css';
 
 const Cargo = () => {
   return (

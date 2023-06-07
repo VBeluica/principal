@@ -1,5 +1,5 @@
 import React from 'react';
-import './identificacao.css';
+import '../../src/styles/identificacao.css';
 import { Grid } from '@mui/material';
 import Table from '@mui/material/Table';
 
