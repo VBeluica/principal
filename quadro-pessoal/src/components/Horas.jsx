@@ -1,13 +1,15 @@
 import React from 'react';
-import '../../src/styles/horas.css';
 import Table from '@mui/material/Table';
+import '../styles/horas.css'
 
 
 const Horas = () => {
   return (
-    
-    <Table >
-    <table className="tabela">
+  
+     <div>
+      <h3 style={{textAlign:'center', fontFamily:'Inter', color: 'rgba(0, 0, 0, 0.75)', fontSize:'15px'}}>Jornada de trabalho</h3>
+    <Table  >
+    <table className="tabelaHora">
       <tbody>
         <tr>
           <td className="coluna-primeira-linhaluna">20 HORAS SEMANAIS</td>
@@ -16,6 +18,8 @@ const Horas = () => {
       </tbody>
     </table>
    </Table>
+   </div>
+
   );
 }
 

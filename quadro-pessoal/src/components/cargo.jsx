@@ -1,9 +1,11 @@
 import React from 'react';
-import '../../src/styles/cargo.css';
+import '../styles/cargo.css'
 
 const Cargo = () => {
   return (
-    <table className="tabela">
+    <div>
+       <h3 style={{textAlign:'center', fontFamily:'Inter', color: 'rgba(0, 0, 0, 0.75)', fontSize:'15px'}}>Cargo Emprego</h3>
+    <table className="tabelaCargo" >
       <tbody>
         <tr>
           <td className="linha">Grupo/Cargo</td>
@@ -19,6 +21,7 @@ const Cargo = () => {
         </tr>
       </tbody>
     </table>
+    </div>
   );
 }
 

@@ -1,13 +1,14 @@
 import React from 'react';
-
 import { Grid } from '@mui/material';
 import Table from '@mui/material/Table';
+import '../styles/dados.css'
 
 
 const Dados = () => {
   return (
-    
-    <Table sx={{ minWidth: 650 }} aria-label="caption table">
+    <div>    
+      <h3 style={{textAlign:'center', fontFamily:'Inter', color: 'rgba(0, 0, 0, 0.75)', fontSize:'15px'}}>Dados de ingresso no orgão</h3>
+      <Table sx={{ minWidth: 650 }} aria-label="caption table" >
     <table className="tabela">
       <tbody>
         <tr>
@@ -27,6 +28,8 @@ const Dados = () => {
       </tbody>
     </table>
    </Table>
+   </div>
+
   );
 }
 

@@ -25,7 +25,8 @@ const Inicial = () => {
       <div className='wrapper'>
         <div className='cols cols0'>
           <span className='topline'>Bem-vind(o) ao</span>
-          <h1>Pesquisa no Quadro de Pessoas</h1>
+          <h1 className='texto'>Pesquisa no </h1>
+          <h1 className='texto'>Quadro de Pessoas</h1>
           <button onClick={onClickButton}>Buscar</button>
         </div>
         

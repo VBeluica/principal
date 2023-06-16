@@ -6,9 +6,13 @@ import Table from '@mui/material/Table';
 
 const Tabela = () => {
   return (
-    
-    <Table sx={{ minWidth: 650 }} aria-label="caption table">
+    <div>
+
+    <h3 style={{textAlign:'center', fontFamily:'Inter', color: 'rgba(0, 0, 0, 0.75)', fontSize:'20px', padding:'10px'}}>Nome: Vera Lucia Bezerra da Silva </h3>
+    <h4 style={{textAlign:'center', fontFamily:'Inter', color: 'rgba(0, 0, 0, 0.75)', fontSize:'15px'}}>Identificação</h4>
+    <Table sx={{ minWidth: 650 }} aria-label="caption table" >
     <table className="tabela">
+    
       <tbody>
         <tr>
           <td className="coluna-primeira-linhaluna">SIAPE</td>
@@ -27,6 +31,7 @@ const Tabela = () => {
       </tbody>
     </table>
    </Table>
+   </div>
   );
 }
 
